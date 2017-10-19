@@ -25,13 +25,14 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //Declare the two buttons
         b1 = (Button)findViewById(R.id.button);
         b2 = (Button)findViewById(R.id.button2);
-
+        //Create an edit text, which will be used to enter data and a
+        //text view to load data to
         ed=(EditText)findViewById(R.id.editText);
         tv=(TextView)findViewById(R.id.textView2);
-
+        //When the first button is clicked, data is saved to file
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,7 +47,7 @@ public class MainActivity extends Activity {
                 }
             }
         });
-
+        //When the second button is clicked, data is retrieved from file
         b2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
